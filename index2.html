@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        main{
+            height: 100vh;
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+        }
+        main > section {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: blueviolet;
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+            background-blend-mode:multiply;
+        }
+        main > section:nth-child(odd){
+            background-color: brown;
+        }
+        #section-1{
+            background: #f30505 url(images/BARBER.jpeg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section id="section-1">
+            <div>1</div>
+        </section>
+        <section id="section-2">
+            <div>2</div>
+        </section>
+        <section id="section-3">
+            <div>3</div>
+        </section>
+        <section id="section-4">
+            <div>4</div>
+        </section>
+        <section id="section-5">
+            <div>5</div>
+        </section>
+    </main>
+</body>
+</html>
